@@ -40,22 +40,23 @@
 
 			initThree();
 			addDirectionalLight();
+			addAmbientLight();
 			loadObjLoader();
 
 			/**
 			 * DirectionalLight를 추가하는 함수
 			 *
-			//  * @method addDirectionalLight
-			//  */
-			// function addDirectionalLight() {
-			//
-			// 	light = new THREE.DirectionalLight(0xffffff, 1);
-			// 	light.castShadow = true;
-			// 	light.position.x = 5;
-			// 	light.position.y = 5;
-			// 	light.position.z = 5;
-			// 	scene.add(light);
-			// }
+			 * @method addDirectionalLight
+			 */
+			function addDirectionalLight() {
+
+				light = new THREE.DirectionalLight(0xffffff, 1);
+				light.castShadow = true;
+				light.position.x = 5;
+				light.position.y = 5;
+				light.position.z = 5;
+				scene.add(light);
+			}
 		/**
 	              * AmbientLight를 추가하는 함수
 	              *
