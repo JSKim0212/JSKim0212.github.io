@@ -36,6 +36,7 @@
 			let light;
 			let camera;
 			let loader; // OBJLoader 객체를 넣을 변수를 선언합니다.
+			scene.background = new THREE.Color(0xeeeeee);
 
 			initThree();
 			addDirectionalLight();
@@ -44,26 +45,45 @@
 			/**
 			 * DirectionalLight를 추가하는 함수
 			 *
-			 * @method addDirectionalLight
-			 */
-			function addDirectionalLight() {
+			//  * @method addDirectionalLight
+			//  */
+			// function addDirectionalLight() {
+			//
+			// 	light = new THREE.DirectionalLight(0xffffff, 1);
+			// 	light.castShadow = true;
+			// 	light.position.x = 5;
+			// 	light.position.y = 5;
+			// 	light.position.z = 5;
+			// 	scene.add(light);
+			// }
+		/**
+	              * AmbientLight를 추가하는 함수
+	              *
+	              * @method addAmbientLight
+	              */
+	             function addAmbientLight() {
+	                 /**
+	                  * AmbientLight는 Scene의 모든 오브젝트를 전역으로 빛을 비춰줍니다.
+	                  * 그러므로 빛의 방향이 없어 그림자는 존재하지 않습니다.
+	                  *
+	                  * AmbientLight(color : Integer, intensity : Float)
+	                  * color: optional, 조명 색상 값(RGB 값을 사용), 기본값은 0xffffff 입니다.
+	                  * intensity: optional, 조명의 밝기 수차, 기본값은 1 입니다.(값이 낮아 질 수록 어두워 집니다.)
+	                  */
+	                 light = new THREE.AmbientLight(0xffffff, 0.2);
+	                 scene.add(light);
 
-				light = new THREE.DirectionalLight(0xffffff, 1);
-				light.castShadow = true;
-				light.position.x = 5;
-				light.position.y = 5;
-				light.position.z = 5;
-				scene.add(light);
-			}
+	                 setShadowCamera();
+								 }
 
-			/**
+	 			/**
 			 * .obj 파일의 모델을 로드하는 함수
 			 *
 			 * @method loadObjLoader
 			 */
 			function loadObjLoader() {
 				loader = new THREE.OBJLoader();
-				loader.load('./alt4.obj', function (object) {
+				loader.load('./alt4_small.obj', function (object) {
 					// 모델 로드가 완료되었을때 호출되는 함수
 					scene.add(object);
 				}, function (xhr) {
