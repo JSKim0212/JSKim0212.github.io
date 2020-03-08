@@ -2,415 +2,462 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
   <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="script.js"></script>
+  <!-- <script type="text/javascript" src="script.js"></script> -->
 
   <title>JinsungKim`s Home</title>
+  <script>
+    function fnMove(seq){
+        var offset = $("#" + seq).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+    }
+
+</script>
 
 
 </head>
 
 <body bgcolor="#f8f8f8">
 
-  <div id="index_box1">
-  </div>
 
-  <div id="top_bar" class="project">
+  <div  id="top_bar" class="top_bar_style">
     <a href="index.html" target="_self">
-      <span class="description_monaco main_title"> Jinsung Kim
+      <span class="description_normal main_title"> Jinsung Kim`s Web Site
       </span> </a>
   </div>
+  <div id="content">
 
-  <div id="index_box">
-    <div id="titles">
-      <div id="CV">
-        <span class="contact_monaco">Curriculum Vitae</span>
+    <div id="index_box" class="index_box_style">
+      <div onclick="fnMove('CV')" class="title_style title_cliked">
+        <div class="title_normal ">
+          Curriculum Vitae
+        </div>
       </div>
-    </div>
+      <div onclick="fnMove('resarch_project')"  class="title_style">
+        <div class="title_normal ">
+          Research Project
+        </div>
+      </div>
+      <div onclick="fnMove('Design_project')" class="title_style">
+        <div class="title_normal ">
+          Design Project
+        </div>
+      </div>
+
 
   </div>
 
 
+  <div id="main_box" class="main_box_style">
+    <div id="CV" class="project">
+      <img src="images/jinsungkim.jpg" width="50%" /><br><br>
 
-  <div id="jinsung" class="project">
-    <img src="images/jinsungkim.jpg" width="50%" /><br><br>
+      <span class="contents_normal"><b>Jinsung Kim</b>
+        <br>
+        <b>김진성</b>
+        <br>
+        <br>
+        Research Assistant at <span style=" color:#003876">Space & Design IT Lab </span>
+        <br>
+        디자인 IT Lab 석사과정 연구원
+        <br>
+        <br>
+        Dept. of Interior Architectrue & Built Environment at <span style=" color:#003876">Yonsei Univ.</span>
+        <br>
+        연세대학교 실내건축학과
+        <br>
+        연락처 : <a href="mailto:jinsungkim212@gmail.com" style=" color:#003876" target="_blank">jinsungkim212@gmail.com</a></span>
 
-    <span class="contents_monaco"><b>Jinsung Kim.</b>
-      <br>
-      <b>김진성.</b>
       <br>
       <br>
-      Research Assistant at <span style=" color:#003876">Space & Design IT Lab </span>
       <br>
-      디자인 IT Lab 연구보조원
-      <br>
-      <br>
-      Dept. of Interior Architectrue & Built Environment at <span style=" color:#003876">Yonsei Univ.</span>
-      <br>
-      연세대학교 실내건축학과
-      <br>
-      연락처 : <a href="mailto:jinsungkim212@gmail.com" style=" color:#003876" target="_blank">jinsungkim212@gmail.com</a></span>
 
-    <br>
-    <br>
-    <br>
+      <div class="contents contents_title">
+        <span><b>관심분야</b> </span>
+      </div>
 
-    <div class="contents contents_title">
-      <span><b>관심분야</b> </span>
+      <br>
+      <ul class="contents_normal">
+        <li>
+          건축계획 분야: 건물 공간계획, 건축프로그램, 실내 디자인 등
+        </li>
+        <li>
+          디지털디자인 분야: CAAD, Computational Design, 디자인 인포그래픽스 등 디지털디자인
+        </li>
+        <li>
+          건물정보모델링(BIM) 분야: BIM Application 연구 및 S/W 개발 | BIM기반 건물설계, 설계품질 자동검토,
+          실내건축설계 지원 등
+        </li>
+        <li>
+          건축설계 소프트웨어 활용 및 개발 분야: Revit & Dynamo, Rhino & Grasshopper, SketchUp & V-ray,
+          3DMax, AutoCAD
+        </li>
+        <li>
+          디지털 패브리케이션 제반 분야: 3D Printing, Lazser Cutting, Robot Arm 등
+        </li>
+        <li>
+          웹 & 개발 분야: HTML, Classic Asp, Mssql, Javascript, Photoshop, Python, C#
+        </li>
+        <li>
+          기계학습 응용 분야: 컴퓨터비전, 자연어처리 등 기계학습 및 딥러닝 기술의 AEC/FM 분야 적용 - MS
+          Azure, Tensorflow, Pytorch 등 개발
+        </li>
+      </ul>
+
+      <br>
+      <br>
+
+
+      <div class="contents contents_title">
+        <span><b>학력</b> </span>
+
+      </div>
+      <br>
+      <span class="contents_normal">
+        2018 - 2020 | 석사 재학 (MS), 연세대학교 실내건축학과
+        <br>
+        2011 - 2017 | 학사 졸업 (BS), 한양대학교 실내건축디자인학과
+      </span>
+      <br>
+      <br>
+      <br>
+
+
+      <div class="contents contents_title">
+        <span><b>경력</b> </span>
+        <br>
+      </div>
+      <span class="contents_normal">
+        <br>
+        2018 | 연세대학교 심바이오틱라이프텍연구원 연구보조원
+        <br>
+        2017 | 한양대학교 BK21 석사과정 연구원
+        <br>
+        2016 | 제이랩 디자인팀 인턴
+      </span>
+      <br>
+      <br>
+      <br>
+
+
+      <div class="contents contents_title">
+        <span><b>참여 연구개발 과제</b> </span>
+        <br>
+      </div>
+      <ol class="contents_normal">
+        <li>
+          실내이미지의 객체 및 스타일 기계학습을 통한 인공지능 학습모델 개발과 실내디자인 활용, Pl: 이진국, 한국연구재단, 2019 ~ 2022.
+        </li>
+        <li>
+          건물정보모델링기반 설계자동화 및 검토지능화를 위한 인공지능과 실감미디어연계 설계기술 개발, Pl: 이진국, 한국연구재단, 2019 ~ 2022.
+        </li>
+        <li>
+          인공지능 기반의 건축설계 자동화기술개발, PI 경북대 추승연, 국토교통부, 2018 ~ 2019.
+        </li>
+        <li>
+          BIM과 딥러닝 활용 디지털융합디자인연구, Pl: 이진국, 연세대, 2018 ~2019.
+        </li>
+        <li>
+          개방형BIM 기반의 건축설계 자동화지원 기술 및 첨단 유지관리 기반기술 개발, PI: 경희대 김인한, 국토교통부, 2017 ~ 2021.
+        </li>
+        <li>
+          BIM기반 건축디자인 자동검토를 위한 각종 품질항목의 논리규칙 체계화 및 비주얼랭귀지 개발, PI: 이진국, 한국연구재단, 2015 ~ 2018.
+        </li>
+        <li>
+          BK21+ 사업팀 디자인영상분야, 미래기후 및 인구변화 대응형 건물재생디자인 창의인재양성팀 (한양대 실내건축디자인학과), PI: 한양대 남경숙, 교육부, 2013 ~ 2018.
+        </li>
+        <li>
+          주거복지 구현을 위한 정책기반 구축 및 주거환경 개선 기술개발, 주거복지 테스트베드 구현을 위한 BIM 활용기술 연구팀, PI: 연세대 이연숙, 국토교통부, 2013 ~ 2016.
+        </li>
+      </ol>
+      <br>
+      <br>
+
+      <div class="contents contents_title">
+        <span><b>지식재산권 및 등록 소프트웨어</b> </span>
+        <br>
+      </div>
+      <ol class="contents_normal">
+        <li>딥러닝 기반 실내이미지 디자인 자동분류 프로그램, 소프트웨어 등록번호: C-2019-035593, PI: 연세대 이진국, 한국연구재단, 2019.11.25
+        </li>
+        <li>
+          딥러닝 알고리즘을 이용한 건축 정보 모델의 객체 유형 정보 인식 장치 및 방법, 특허출원번호 10-2019-0125987, 지원과제: 개방형BIM 기반의 건축설계 자동화지원 기술 및 첨단 유지관리 기반기술 개발, PI: 경희대 김인한, 국토교통부, 2019.10.11
+        </li>
+        <li>
+          딥러닝 기반 BIM 모델의 미분류 객체 유형 정보 인식 프로그램, 등록번호 C-2019-026692, 지원과제: 개방형BIM 기반의 건축설계 자동화지원 기술 및 첨단 유지관리 기반기술 개발, PI: 경희대 김인한, 국토교통부, 2019.09.27
+        </li>
+        <li>
+          지능형 BIM기반 설계품질 검토기술 개발을 위한 공간객체 속성정보 추론 프로그램, 등록번호 C-2019-026693, 지원과제: 개방형BIM 기반의 건축설계 자동화지원 기술 및 첨단 유지관리 기반기술 개발, PI: 경희대 김인한, 국토교통부, 2019.09.27
+        </li>
+        <li>
+          KBimCode(논리규칙)의 규칙검토 실행코드 변환을 위한 웹 인터페이스, 등록번호 C-2018-029897, 지원과제: 개방형BIM 기반의 건축설계 자동화지원 기술 및 첨단 유지관리 기반기술 개발, PI: 경희대 김인한, 국토교통부, 2018.11.01
+        </li>
+      </ol>
+      <br>
+      <br>
+
+      <div class="contents contents_title">
+        <span><b>소프트웨어 & 웹 개발</b> </span>
+        <br>
+      </div>
+      <ol class="contents_normal">
+        <li>
+          시각적 유사도 기반 BIM 객체 추천 및 모델링 지원 Revit plug-in (PI: Prof. Jin-Kook Lee)
+        </li>
+        <li>
+          BIM 객체 유형 자동 분류 Revit plug-in (PI: Prof. Jin-Kook Lee)
+        </li>
+        <li>
+          딥러닝 기반 실내이미지 용도 및 디자인스타일 자동 분류 프로그램 (PI: Prof. Jin-Kook Lee)
+        </li>
+        <li>
+          KBimCode(논리규칙)의 규칙검토 실행코드 변환을 위한 웹 인터페이스, (PI: Prof. Jin-Kook Lee)
+        </li>
+      </ol>
+      <br>
+      <br>
+
+      <div class="contents contents_title">
+        <span><b> 디자인 프로젝트</b> </span>
+        <br>
+      </div>
+      <span class="contents_normal">
+        <br>2019.12 | 생명건축과 모듈러 Workshop, “The Simple Part to Whole System with Three Legs”, with Prof. Jinyoung Song, 연세대학교 실내건축학과
+        <br>
+        2018.12 | 연세대학교 5G와 실감미디어기반 연구 및 교육 혁신 Workshop, “실감미디어 기반 학술정보원 리모델링 프로젝트”, with Prof. Jin-Kook Lee, 스트라다월드와이드(실감미디어 전문기업 Stradaww), 연세대학교 학술정보원
+        <br>
+        2017.01-02 | Robot Tech Workshop, “Robotic Craft in the City: Digital Fabrication”, 2017 서울비엔날레 @서울 시민청
+        <br>
+        2016.03-6 | 한양대학교 실내건축디자인학과 졸업 작품전, “동작도서관 리뉴얼 프로젝트: Re-bootcamp”
+
+      </span>
+      <br>
+      <br>
+      <br>
+
+      <div class="contents contents_title">
+        <span><b>수상</b> </span>
+        <br>
+      </div>
+      <span class="contents_normal">
+        <br>
+        2020 | 우수 논문상, 김진성, 이진국, “설계품질 자동검토 도구를 위한 시각지능 기반 BIM 객체 인식 구현”, 한국CDE학회
+        <br>
+        2018 | 최우수 논문상, 김진성, 송재열, 김하얀, 이진국, “딥러닝 기반 이미지 자동인식 기술을 활용한 사무집기 자동인식과 정보관리 시스템과의 연동방안”, 2017년도 하반기 최우수논문상, 2018 FM학회 심포지움
+        <br>
+        2017 | 우수발표 포스터논문상, “수도권 지하철역 인근 건물 용도별 에너지사용량 웹기반 시각화 도구 개발”, 2017 한국CDE학회 춘계학술발표대회
+        <br>
+        2016 | 공로상, 2016 한양 실내건축디자인전 (졸업작품전)
+        <br>
+        2012 | 입선, “For-Rest”, 대한디지털건축대전 (디지털디자인 이미지 부분)
+      </span>
+      <br>
+      <br>
+      <br>
+
+
+      <div class="contents contents_title">
+        <span><b>국제논문</b> </span>
+        <br>
+      </div>
+      <ol class="contents_normal">
+        <li>
+          Jin-Sung Kim, Jung-Sik Choi, Jin-Kook Lee, 2019, Approach to Design Reference Management using Auto-Recog-nition System of Room and Design Style, International Journal of Engineering & Technology, 8 (1.4) pp.56-64 2019.01.02
+        </li>
+      </ol>
+      <br>
+      <br>
+
+      <div class="contents contents_title">
+        <span><b>국내논문</b> </span>
+        <br>
+      </div>
+      <ol class="contents_normal">
+        <li>
+          이상훈, 김진성, 송재열, 이진국, 디자인 초기 현장 시각화를 위한 증강현실기반 접근 방법 – 대학교학술정보관 공간개선 디자인 안 예시를 중심으로, 한국 실내디자인학회 논문집, 2020.02.28
+        </li>
+        <li>
+          김진성, 이진국, 설계품질 자동검토 도구를 위한 시각지능기반 BIM 객체 인식 구현, 한국CDE학회 논문집, 24(4), pp.1-9. 2019.12
+        </li>
+        <li>
+          김진성, 이진국, 지능형 디자인 레퍼런스 관리를 위한 실내이미지 자동인식, 한국실내디자인학회 논문집, 27(5), pp.13-20. 2018.10
+        </li>
+        <li>
+          김진성, 김하얀, 송재열, 이진국, 딥러닝 기반 이미지 자동인식 기술을 활용한 사무집기 자동인식과 정보관리 시스템과의 연동방안, 한국퍼실리티매니지먼트학회 논문집, 12(2), 73-80, 2017.12
+        </li>
+      </ol>
+      <br>
+      <br>
+
+
+      <div class="contents contents_title">
+        <span><b>국제학술대회발표</b> </span>
+        <br>
+      </div>
+      <ol class="contents_normal">
+        <li>
+          Jinsung Kim, Jaeyeol Song, Sanghoon Lee and Jin-Kook Lee, "Recognizing BIM Room Type of Residential Building: Preliminary Test of CNN-based Deep Learning Model", Proceedings of International Congress and Conferences on Computational Design
+          and Engineering (i3CDE 2019), Penang, Malaysia, July 2019, pp. 111-112
+        </li>
+        <li>
+          Jinsung Kim, Jaeyeol Song, Jin-Kook Lee, Recognizing and Classifying Unknown Object in BIM Using 2D CNN. In: Lee JH. (eds) Computer-Aided Architectural Design. "Hello, Culture". CAAD Futures 2019. Communications in Computer and Information
+          Science, vol 1028. Springer,
+        </li>
+        <li>
+          Jinsung Kim, Jaeyeol Song and Jin-Kook Lee, "Inference of Relevant BIM Objects using CNN for Visual-input based Auto-Modeling" 36th International Symposium on Automation and Robotics in Construction (ISARC 2019), Banff, Canada, May 2019
+        </li>
+        <li>
+          Jinsung Kim, Jaeyeol Song and Jin-Kook Lee, "Approach to Auto-recognition of Design Elements for the Intelligent Management of Interior Pictures", Proceedings of the 24th Annual Conference of the Association for Computer-Aided Architectural
+          Design Research in Asia (CAADRIA 2019), Volume 2, pp. 785-794
+        </li>
+        <li>
+          Jinsung Kim, Jaeyeol Song, and Jin-Kook Lee, "Approach to the extraction of design features of interior design elements using image recognition technique", Proceedings of the 23rd International Conference of the Association for
+          Computer-Aided Architectural Design Research in Asia (CAADRIA) 2018, pp. 873-883
+        </li>
+        <li>
+          Jinsung Kim and Jin-Kook Lee, "Auto-Classification of Interior Design Styles for Managing Reference Images", Proceedings of the 6th International Conference on AGST 2018, pp16-19, 2018.06
+        </li>
+        <li>
+          Jinsung Kim, Jin-Kook Lee, Jaeyeol Song and Hayan Kim, “Approach to the Deep Learning-based Architectural Design using Recognition and Decomposition of Design Element”. Proceeding of International Symposium on Computational Design and
+          Engeneering (ISCDE 2017). pp.113-pp.114 2017.12
+        </li>
+        <li>
+          Jinsung Kim, Jin-Kook Lee, Jaeyoung Shin and Hayan Kim, "BIM-supported Design Analysis for Customized Housing Unit Allocation"", Proceedings of the 22nd International Conference of the Association for Computer-Aided Architectural Design
+          Research in Asia (CAADRIA) 2017, pp. 119, 2017.06
+        </li>
+        <li>
+          Jinsung Kim, Jin-Kook Lee, Jaeyoung Shin, Hayan Kim, "Classification of objects and their properties defined in Korea Building Act to translate into KBimCode and their application", 34th International Symposium on Automation and Robotics in
+          Construction (ISARC 2017), pp. 148-155, 2017.07
+        </li>
+      </ol>
+      <br>
+      <br>
+
+
+      <div class="contents contents_title">
+        <span><b> 국내컨퍼런스페이퍼</b> </span>
+        <br>
+      </div>
+      <ol class="contents_normal">
+        <li>
+          김진성, 이진국. "2D-CNN 기반 미인식 건축객체 유형정보 추론 접근방법 ", 2019 CDE학회 동계학술대회 pp.72-75. 2019.2
+        </li>
+        <li>
+          김진성, 이진국. "실내이미지 자동인식 기술을 활용한 지능형 디자인 사례 관리", 2018 실내디자인학회 추계학술대회 논문집, pp.72-75. 2018.10
+        </li>
+        <li>
+          송재열, 김진성, 이진국, “지능형 BIM 기반 설계품질검토 자동화를 위한 문장 내 대상 객체 및 속성정보 인식모델 구현 접근방안”, 2018 CDE학회 하계학술대회, pp.191-192, 2018.08
+        </li>
+        <li>
+          김진성, 송재열, 이진국, “딥러닝 기반 국내 아파트 실내사진 자동분류”, 2018 CDE학회 하계학술대회, pp.280-281, 2018.08
+        </li>
+        <li>
+          송재열, 김진성, 이진국. “딥러닝 기반 자연어처리 기술을 이용한 건축법규 문장간 유사도 측정과 활용방안”, 2018 CDE학회 동계학술대회, pp.472-pp.474 2018. 02
+        </li>
+        <li>
+          김진성, 김하얀, 이진국. (2017). “딥러닝기반 실내이미지 디자인스타일 자동분류”. 한국실내디자인학회 학술대회논문집, 19(3), 95-98. 2017.10
+        </li>
+        <li>
+          김진성, 이진국, 김하얀, 송재열 "건축물 설계품질 검토규칙의 KBimCode 변환을 지원하는 웹 기반 데이터베이스 응용 방안 제안”, 2017년도 한국CDE학회 하계학술대회논문집, pp. 37-39, 2017.08
+        </li>
+        <li>
+          신재영, 이진국, 김하얀, 김진성,“BIM기반 실내 동선 보행친화성 지표를 활용한 설계 대안평가 사례연구”, 2017 한국CDE학회 동계학술대회 논문집, pp.635-637, 2017.02
+        </li>
+        <li>
+          김하얀, 이진국, 신재영, 김진성,“Visual Language 기반 파라메트릭 모델링을 활용한 BIM 실내건축객체속성 정보활용사례연구”, 2017 한국CDE학회 동계학술대회 논문집, pp.632-634, 2017.02
+        </li>
+        <li>
+          이진국, 김진성, 김하얀, 신재영,“수도권 지하철역 인근 건물 용도별 에너지사용량 웹 기반 시각화 도구개발”, 2017 한국CDE학회 동계학술대회논문집, pp.638-640, 2017.02
+        </li>
+      </ol>
+      <br>
+      <br>
+
+
+      <div class="contents contents_title">
+        <span><b> 국내외 연수 활동</b> </span>
+        <br>
+      </div>
+      <span class="contents_normal">
+        <br>2020.02 | 해외연수 - 실리콘벨리 주요 IT 기업 인공지능/머신러닝 세미나 with Facebook, Nividia. CO. @ CA, USA
+        <br>
+        2020.02 | 해외연수 - 샌프란시스코 글로벌 건축설계사 도시 및 건축 설계 세미나 with HOK @ CA, USA
+        <br>
+        2020.02 | 해외연수 - 미국 건물 성능 및 에너지 연구 세미나 with LBNL(Lawrence Berkeley National Laboratory), @ CA, USA
+        <br>
+        2017.07 | 해외연수 - 실리콘벨리 주요 IT 기업 인공지능/머신러닝 세미나 with Nvidia .Co
+        <br>
+        2017.07 | 해외연수 - 샌프란시스코 로컬 건축설계사 건축 설계 세미나 with Gould Evans .Co @ CA, USA
+        <br>
+        2017.07 | 해외연수 - 글로벌 건물 성능 및 에너지 연구 세미나 with LBNL(Lawrence Berkeley National Laboratory), @ CA, USA
+        <br>
+        2016.08 | 해외 건축기업 탐방, Gensler(Chicago), Perkins+Will(Chicago), SteelCase Headquarter(Michigan), @ US
+        <br>
+        2016.07-08 | 해외연수 - 친환경건축과 LEED Certificate, “Green Building & Interior Design Program” with prof. Suk-kyung Kim, Michigan State of University @ Michigan, US
+      </span>
+      <br>
+      <br>
+      <br>
+
+
+      <div class="contents contents_title">
+        <span><b> 교육, 봉사, 창업, 동아리 등 기타활동</b> </span>
+      </div>
+      <span class="contents_normal">
+        <br>
+
+        2018-2020 | 연세대학교 실내건축학과 Design Computing/CAD/BIM 교육조교
+        <br>
+        2019 | 연세대학교 2019 대학원생 창업경진대회 참가 - 개인 맞춤형 날씨 알림서비스 “My Whether”,
+        <br>
+        018 | 연세대학교 실내건축학과 AutoCAD & SketchUp 특강
+        <br>
+        2017 | 한양대학교 마라톤 동아리
+        <br>
+        2012 | 부천시 방과후 다자녀 돌봄센터 봉사
+        <br>
+        2011 | 부천고등학교 학습 및 진로 상담 멘토
+      </span>
+      <br>
+      <br>
+      <br>
+
+
+    </div>
+    <div id="resarch_project" class="project">
+      <div class="contents contents_title">
+        <span><b> 연구 프로젝트</b> </span>
+      </div>
+      <span class="contents_normal">
+      <br>
+      업데이트 진행중
+      </span>
+      <br>
+      <br>
+      <br>
+
+
     </div>
 
-    <br>
-    <ul class="contents_monaco">
-      <li>
-        건축계획 분야: 건물 공간계획, 건축프로그램, 실내 디자인 등
-      </li>
-      <li>
-        디지털디자인 분야: CAAD, Computational Design, 디자인 인포그래픽스 등 디지털디자인
-      </li>
-      <li>
-        건물정보모델링(BIM) 분야: BIM Application 연구 및 S/W 개발 | BIM기반 건물설계, 설계품질 자동검토,
-        실내건축설계 지원 등
-      </li>
-      <li>
-        건축설계 소프트웨어 활용 및 개발 분야: Revit & Dynamo, Rhino & Grasshopper, SketchUp & V-ray,
-        3DMax, AutoCAD
-      </li>
-      <li>
-        디지털 패브리케이션 제반 분야: 3D Printing, Lazser Cutting, Robot Arm 등
-      </li>
-      <li>
-        웹 & 개발 분야: HTML, Classic Asp, Mssql, Javascript, Photoshop, Python, C#
-      </li>
-      <li>
-        기계학습 응용 분야: 컴퓨터비전, 자연어처리 등 기계학습 및 딥러닝 기술의 AEC/FM 분야 적용 - MS
-        Azure, Tensorflow, Pytorch 등 개발
-      </li>
-    </ul>
-
-    <br>
-    <br>
-
-
-    <div class="contents contents_title">
-      <span><b>학력</b> </span>
-
-    </div>
-    <br>
-    <span class="contents_monaco">
-      2018 - 2020 | 석사 재학 (MS), 연세대학교 실내건축학과
+    <div id="design_project" class="project">
+      <div class="contents contents_title">
+        <span><b> 디자인 프로젝트</b> </span>
+      </div>
+      <span class="contents_normal">
       <br>
-      2011 - 2017 | 학사 졸업 (BS), 한양대학교 실내건축디자인학과
-    </span>
-    <br>
-    <br>
-    <br>
-
-
-    <div class="contents contents_title">
-      <span><b>경력</b> </span>
+      업데이트 진행중
+      </span>
+      <br>
+      <br>
       <br>
     </div>
-    <span class="contents_monaco">
-      <br>
-      2018 | 연세대학교 심바이오틱라이프텍연구원 연구보조원
-      <br>
-      2017 | 한양대학교 BK21 석사과정 연구원
-      <br>
-      2016 | 제이랩 디자인팀 인턴
-    </span>
-    <br>
-    <br>
-    <br>
-
-
-    <div class="contents contents_title">
-      <span><b>참여 연구개발 과제</b> </span>
-      <br>
-    </div>
-    <ol class="contents_monaco">
-      <li>
-        실내이미지의 객체 및 스타일 기계학습을 통한 인공지능 학습모델 개발과 실내디자인 활용, Pl: 이진국, 한국연구재단, 2019 ~ 2022.
-      </li>
-      <li>
-        건물정보모델링기반 설계자동화 및 검토지능화를 위한 인공지능과 실감미디어연계 설계기술 개발, Pl: 이진국, 한국연구재단, 2019 ~ 2022.
-      </li>
-      <li>
-        인공지능 기반의 건축설계 자동화기술개발, PI 경북대 추승연, 국토교통부, 2018 ~ 2019.
-      </li>
-      <li>
-        BIM과 딥러닝 활용 디지털융합디자인연구, Pl: 이진국, 연세대, 2018 ~2019.
-      </li>
-      <li>
-        개방형BIM 기반의 건축설계 자동화지원 기술 및 첨단 유지관리 기반기술 개발, PI: 경희대 김인한, 국토교통부, 2017 ~ 2021.
-      </li>
-      <li>
-        BIM기반 건축디자인 자동검토를 위한 각종 품질항목의 논리규칙 체계화 및 비주얼랭귀지 개발, PI: 이진국, 한국연구재단, 2015 ~ 2018.
-      </li>
-      <li>
-        BK21+ 사업팀 디자인영상분야, 미래기후 및 인구변화 대응형 건물재생디자인 창의인재양성팀 (한양대 실내건축디자인학과), PI: 한양대 남경숙, 교육부, 2013 ~ 2018.
-      </li>
-      <li>
-        주거복지 구현을 위한 정책기반 구축 및 주거환경 개선 기술개발, 주거복지 테스트베드 구현을 위한 BIM 활용기술 연구팀, PI: 연세대 이연숙, 국토교통부, 2013 ~ 2016.
-      </li>
-    </ol>
-    <br>
-    <br>
-
-    <div class="contents contents_title">
-      <span><b>지식재산권 및 등록 소프트웨어</b> </span>
-      <br>
-    </div>
-    <ol class="contents_monaco">
-      <li>딥러닝 기반 실내이미지 디자인 자동분류 프로그램, 소프트웨어 등록번호: C-2019-035593, PI: 연세대 이진국, 한국연구재단, 2019.11.25
-      </li>
-      <li>
-        딥러닝 알고리즘을 이용한 건축 정보 모델의 객체 유형 정보 인식 장치 및 방법, 특허출원번호 10-2019-0125987, 지원과제: 개방형BIM 기반의 건축설계 자동화지원 기술 및 첨단 유지관리 기반기술 개발, PI: 경희대 김인한, 국토교통부, 2019.10.11
-      </li>
-      <li>
-        딥러닝 기반 BIM 모델의 미분류 객체 유형 정보 인식 프로그램, 등록번호 C-2019-026692, 지원과제: 개방형BIM 기반의 건축설계 자동화지원 기술 및 첨단 유지관리 기반기술 개발, PI: 경희대 김인한, 국토교통부, 2019.09.27
-      </li>
-      <li>
-        지능형 BIM기반 설계품질 검토기술 개발을 위한 공간객체 속성정보 추론 프로그램, 등록번호 C-2019-026693, 지원과제: 개방형BIM 기반의 건축설계 자동화지원 기술 및 첨단 유지관리 기반기술 개발, PI: 경희대 김인한, 국토교통부, 2019.09.27
-      </li>
-      <li>
-        KBimCode(논리규칙)의 규칙검토 실행코드 변환을 위한 웹 인터페이스, 등록번호 C-2018-029897, 지원과제: 개방형BIM 기반의 건축설계 자동화지원 기술 및 첨단 유지관리 기반기술 개발, PI: 경희대 김인한, 국토교통부, 2018.11.01
-      </li>
-    </ol>
-    <br>
-    <br>
-
-    <div class="contents contents_title">
-      <span><b>소프트웨어 & 웹 개발</b> </span>
-      <br>
-    </div>
-    <ol class="contents_monaco">
-      <li>
-        시각적 유사도 기반 BIM 객체 추천 및 모델링 지원 Revit plug-in (PI: Prof. Jin-Kook Lee)
-      </li>
-      <li>
-        BIM 객체 유형 자동 분류 Revit plug-in (PI: Prof. Jin-Kook Lee)
-      </li>
-      <li>
-        딥러닝 기반 실내이미지 용도 및 디자인스타일 자동 분류 프로그램 (PI: Prof. Jin-Kook Lee)
-      </li>
-      <li>
-        KBimCode(논리규칙)의 규칙검토 실행코드 변환을 위한 웹 인터페이스, (PI: Prof. Jin-Kook Lee)
-      </li>
-    </ol>
-    <br>
-    <br>
-
-    <div class="contents contents_title">
-      <span><b> 디자인 프로젝트</b> </span>
-      <br>
-    </div>
-    <span class="contents_monaco">
-      <br>2019.12 | 생명건축과 모듈러 Workshop, “The Simple Part to Whole System with Three Legs”, with Prof. Jinyoung Song, 연세대학교 실내건축학과
-      <br>
-      2018.12 | 연세대학교 5G와 실감미디어기반 연구 및 교육 혁신 Workshop, “실감미디어 기반 학술정보원 리모델링 프로젝트”, with Prof. Jin-Kook Lee, 스트라다월드와이드(실감미디어 전문기업 Stradaww), 연세대학교 학술정보원
-      <br>
-      2017.01-02 | Robot Tech Workshop, “Robotic Craft in the City: Digital Fabrication”, 2017 서울비엔날레 @서울 시민청
-      <br>
-      2016.03-6 | 한양대학교 실내건축디자인학과 졸업 작품전, “동작도서관 리뉴얼 프로젝트: Re-bootcamp”
-
-    </span>
-    <br>
-    <br>
-    <br>
-
-    <div class="contents contents_title">
-      <span><b>수상</b> </span>
-      <br>
-    </div>
-    <span class="contents_monaco">
-      <br>
-      2020 | 우수 논문상, 김진성, 이진국, “설계품질 자동검토 도구를 위한 시각지능 기반 BIM 객체 인식 구현”, 한국CDE학회
-      <br>
-      2018 | 최우수 논문상, 김진성, 송재열, 김하얀, 이진국, “딥러닝 기반 이미지 자동인식 기술을 활용한 사무집기 자동인식과 정보관리 시스템과의 연동방안”, 2017년도 하반기 최우수논문상, 2018 FM학회 심포지움
-      <br>
-      2017 | 우수발표 포스터논문상, “수도권 지하철역 인근 건물 용도별 에너지사용량 웹기반 시각화 도구 개발”, 2017 한국CDE학회 춘계학술발표대회
-      <br>
-      2016 | 공로상, 2016 한양 실내건축디자인전 (졸업작품전)
-      <br>
-      2012 | 입선, “For-Rest”, 대한디지털건축대전 (디지털디자인 이미지 부분)
-    </span>
-    <br>
-    <br>
-    <br>
-
-
-    <div class="contents contents_title">
-      <span><b>국제논문</b> </span>
-      <br>
-    </div>
-    <ol class="contents_monaco">
-      <li>
-        Jin-Sung Kim, Jung-Sik Choi, Jin-Kook Lee, 2019, Approach to Design Reference Management using Auto-Recog-nition System of Room and Design Style, International Journal of Engineering & Technology, 8 (1.4) pp.56-64 2019.01.02
-      </li>
-    </ol>
-    <br>
-    <br>
-
-    <div class="contents contents_title">
-      <span><b>국내논문</b> </span>
-      <br>
-    </div>
-    <ol class="contents_monaco">
-      <li>
-        이상훈, 김진성, 송재열, 이진국, 디자인 초기 현장 시각화를 위한 증강현실기반 접근 방법 – 대학교학술정보관 공간개선 디자인 안 예시를 중심으로, 한국 실내디자인학회 논문집, 2020.02.28
-      </li>
-      <li>
-        김진성, 이진국, 설계품질 자동검토 도구를 위한 시각지능기반 BIM 객체 인식 구현, 한국CDE학회 논문집, 24(4), pp.1-9. 2019.12
-      </li>
-      <li>
-        김진성, 이진국, 지능형 디자인 레퍼런스 관리를 위한 실내이미지 자동인식, 한국실내디자인학회 논문집, 27(5), pp.13-20. 2018.10
-      </li>
-      <li>
-        김진성, 김하얀, 송재열, 이진국, 딥러닝 기반 이미지 자동인식 기술을 활용한 사무집기 자동인식과 정보관리 시스템과의 연동방안, 한국퍼실리티매니지먼트학회 논문집, 12(2), 73-80, 2017.12
-      </li>
-    </ol>
-    <br>
-    <br>
-
-
-    <div class="contents contents_title">
-      <span><b>국제학술대회발표</b> </span>
-      <br>
-    </div>
-    <ol class="contents_monaco">
-      <li>
-        Jinsung Kim, Jaeyeol Song, Sanghoon Lee and Jin-Kook Lee, "Recognizing BIM Room Type of Residential Building: Preliminary Test of CNN-based Deep Learning Model", Proceedings of International Congress and Conferences on Computational Design
-        and Engineering (i3CDE 2019), Penang, Malaysia, July 2019, pp. 111-112
-      </li>
-      <li>
-        Jinsung Kim, Jaeyeol Song, Jin-Kook Lee, Recognizing and Classifying Unknown Object in BIM Using 2D CNN. In: Lee JH. (eds) Computer-Aided Architectural Design. "Hello, Culture". CAAD Futures 2019. Communications in Computer and Information
-        Science, vol 1028. Springer,
-      </li>
-      <li>
-        Jinsung Kim, Jaeyeol Song and Jin-Kook Lee, "Inference of Relevant BIM Objects using CNN for Visual-input based Auto-Modeling" 36th International Symposium on Automation and Robotics in Construction (ISARC 2019), Banff, Canada, May 2019
-      </li>
-      <li>
-        Jinsung Kim, Jaeyeol Song and Jin-Kook Lee, "Approach to Auto-recognition of Design Elements for the Intelligent Management of Interior Pictures", Proceedings of the 24th Annual Conference of the Association for Computer-Aided Architectural
-        Design Research in Asia (CAADRIA 2019), Volume 2, pp. 785-794
-      </li>
-      <li>
-        Jinsung Kim, Jaeyeol Song, and Jin-Kook Lee, "Approach to the extraction of design features of interior design elements using image recognition technique", Proceedings of the 23rd International Conference of the Association for
-        Computer-Aided Architectural Design Research in Asia (CAADRIA) 2018, pp. 873-883
-      </li>
-      <li>
-        Jinsung Kim and Jin-Kook Lee, "Auto-Classification of Interior Design Styles for Managing Reference Images", Proceedings of the 6th International Conference on AGST 2018, pp16-19, 2018.06
-      </li>
-      <li>
-        Jinsung Kim, Jin-Kook Lee, Jaeyeol Song and Hayan Kim, “Approach to the Deep Learning-based Architectural Design using Recognition and Decomposition of Design Element”. Proceeding of International Symposium on Computational Design and
-        Engeneering (ISCDE 2017). pp.113-pp.114 2017.12
-      </li>
-      <li>
-        Jinsung Kim, Jin-Kook Lee, Jaeyoung Shin and Hayan Kim, "BIM-supported Design Analysis for Customized Housing Unit Allocation"", Proceedings of the 22nd International Conference of the Association for Computer-Aided Architectural Design
-        Research in Asia (CAADRIA) 2017, pp. 119, 2017.06
-      </li>
-      <li>
-        Jinsung Kim, Jin-Kook Lee, Jaeyoung Shin, Hayan Kim, "Classification of objects and their properties defined in Korea Building Act to translate into KBimCode and their application", 34th International Symposium on Automation and Robotics in
-        Construction (ISARC 2017), pp. 148-155, 2017.07
-      </li>
-    </ol>
-    <br>
-    <br>
-
-
-    <div class="contents contents_title">
-      <span><b> 국내컨퍼런스페이퍼</b> </span>
-      <br>
-    </div>
-    <ol class="contents_monaco">
-      <li>
-        김진성, 이진국. "2D-CNN 기반 미인식 건축객체 유형정보 추론 접근방법 ", 2019 CDE학회 동계학술대회 pp.72-75. 2019.2
-      </li>
-      <li>
-        김진성, 이진국. "실내이미지 자동인식 기술을 활용한 지능형 디자인 사례 관리", 2018 실내디자인학회 추계학술대회 논문집, pp.72-75. 2018.10
-      </li>
-      <li>
-        송재열, 김진성, 이진국, “지능형 BIM 기반 설계품질검토 자동화를 위한 문장 내 대상 객체 및 속성정보 인식모델 구현 접근방안”, 2018 CDE학회 하계학술대회, pp.191-192, 2018.08
-      </li>
-      <li>
-        김진성, 송재열, 이진국, “딥러닝 기반 국내 아파트 실내사진 자동분류”, 2018 CDE학회 하계학술대회, pp.280-281, 2018.08
-      </li>
-      <li>
-        송재열, 김진성, 이진국. “딥러닝 기반 자연어처리 기술을 이용한 건축법규 문장간 유사도 측정과 활용방안”, 2018 CDE학회 동계학술대회, pp.472-pp.474 2018. 02
-      </li>
-      <li>
-        김진성, 김하얀, 이진국. (2017). “딥러닝기반 실내이미지 디자인스타일 자동분류”. 한국실내디자인학회 학술대회논문집, 19(3), 95-98. 2017.10
-      </li>
-      <li>
-        김진성, 이진국, 김하얀, 송재열 "건축물 설계품질 검토규칙의 KBimCode 변환을 지원하는 웹 기반 데이터베이스 응용 방안 제안”, 2017년도 한국CDE학회 하계학술대회논문집, pp. 37-39, 2017.08
-      </li>
-      <li>
-        신재영, 이진국, 김하얀, 김진성,“BIM기반 실내 동선 보행친화성 지표를 활용한 설계 대안평가 사례연구”, 2017 한국CDE학회 동계학술대회 논문집, pp.635-637, 2017.02
-      </li>
-      <li>
-        김하얀, 이진국, 신재영, 김진성,“Visual Language 기반 파라메트릭 모델링을 활용한 BIM 실내건축객체속성 정보활용사례연구”, 2017 한국CDE학회 동계학술대회 논문집, pp.632-634, 2017.02
-      </li>
-      <li>
-        이진국, 김진성, 김하얀, 신재영,“수도권 지하철역 인근 건물 용도별 에너지사용량 웹 기반 시각화 도구개발”, 2017 한국CDE학회 동계학술대회논문집, pp.638-640, 2017.02
-      </li>
-    </ol>
-    <br>
-    <br>
-
-
-    <div class="contents contents_title">
-      <span><b> 국내외 연수 활동</b> </span>
-      <br>
-    </div>
-    <span class="contents_monaco">
-      <br>2020.02 | 해외연수 - 실리콘벨리 주요 IT 기업 인공지능/머신러닝 세미나 with Facebook, Nividia. CO. @ CA, USA
-      <br>
-      2020.02 | 해외연수 - 샌프란시스코 글로벌 건축설계사 도시 및 건축 설계 세미나 with HOK @ CA, USA
-      <br>
-      2020.02 | 해외연수 - 미국 건물 성능 및 에너지 연구 세미나 with LBNL(Lawrence Berkeley National Laboratory), @ CA, USA
-      <br>
-      2017.07 | 해외연수 - 실리콘벨리 주요 IT 기업 인공지능/머신러닝 세미나 with Nvidia .Co
-      <br>
-      2017.07 | 해외연수 - 샌프란시스코 로컬 건축설계사 건축 설계 세미나 with Gould Evans .Co @ CA, USA
-      <br>
-      2017.07 | 해외연수 - 글로벌 건물 성능 및 에너지 연구 세미나 with LBNL(Lawrence Berkeley National Laboratory), @ CA, USA
-      <br>
-      2016.08 | 해외 건축기업 탐방, Gensler(Chicago), Perkins+Will(Chicago), SteelCase Headquarter(Michigan), @ US
-      <br>
-      2016.07-08 | 해외연수 - 친환경건축과 LEED Certificate, “Green Building & Interior Design Program” with prof. Suk-kyung Kim, Michigan State of University @ Michigan, US
-    </span>
-    <br>
-    <br>
-    <br>
-
-
-    <div class="contents contents_title">
-      <span><b> 교육, 봉사, 창업, 동아리 등 기타활동</b> </span>
-      <br>
-    </div>
-    <span class="contents_monaco">
-      2018-2020 | 연세대학교 실내건축학과 Design Computing/CAD/BIM 교육조교
-      <br>
-      2019 | 연세대학교 2019 대학원생 창업경진대회 참가 - 개인 맞춤형 날씨 알림서비스 “My Whether”,
-      <br>
-      018 | 연세대학교 실내건축학과 AutoCAD & SketchUp 특강
-      <br>
-      2017 | 한양대학교 마라톤 동아리
-      <br>
-      2012 | 부천시 방과후 다자녀 돌봄센터 봉사
-      <br>
-      2011 | 부천고등학교 학습 및 진로 상담 멘토
-    </span>
-    <br>
-    <br>
-    <br>
-
-
-
-
+  </div>
+</div>
 </body>
 
 </html>
