@@ -19,6 +19,10 @@
       Using the default hiro marker (Get it below)
       https://github.com/akashkuttappa/armodels/raw/master/markers/hiro.jpg
     -->
+    <a-assets>
+   <a-asset-item id="alt4-obj" src="./models/ALT4_small_revised.obj"></a-asset-item>
+   <!-- <a-asset-item id="tree-mtl" src="/path/to/tree.mtl"></a-asset-item> -->
+ </a-assets>
     <a-marker preset='hiro'>
       <!-- <a-entity
       id="drone"
@@ -28,8 +32,8 @@
       animation-mixer>
       </a-entity> -->
       <a-entity
-      obj-model="obj: url(./models/ALT4_small_revised.obj)">
-</a-entity>
+      obj-model="obj:#alt-obj">
+        </a-entity>
     </a-marker>
 
     <a-entity camera></a-entity>
